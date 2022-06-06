@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jose David Diaz Zurita">
+    <meta name="description" content="Ejercicio en JS - Variables y Condicionales">
+    <meta name="fuente" content="Enunciado del ejemplo. Libro. (Ejercicios de programacion en JAVA) de Francisco Manuel Perez Montes">
+
+    <title>Ejercicio JS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <link href="img/js.png" rel="icon" >
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+  </head>
+
+  <body class="text-center">
+    
+    <main class="form-signin w-100 m-auto">
+
+      <form id="miForm">
+
+        <img src="img/codigo.png" alt="" width="57" height="57">
+        <img src="img/js.png" alt="" width="57" height="57">
+
+        <div>
+          <ul class="d-grid gap-4 my-5 list-unstyled">
+            <li class="d-flex gap-4">
+              <div>
+                <h5 class="mb-0">Ejercicio</h5>
+                Pedir los coeficientes de una ecuación de 2º grado, y muestre sus soluciones reales. Si no existen,
+                debe indicarlo
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="a" placeholder="A">
+          <label for="floatingInput">Valor de A</label>
+        </div>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="b" placeholder="B">
+          <label for="floatingInput">Valor de B</label>
+        </div>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="c" placeholder="C">
+          <label for="floatingInput">Valor de C</label>
+        </div>
+
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-primary btn-lg px-4" onclick="Calcular();" value="Calcular">Calcular</button>
+        <button type="reset" class="btn btn-outline-secondary btn-lg px-4" value="Limpiar formulario">Limpiar</button>
+
+      </form>
+
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div>
+            <p class="lead" id="determinante"></p>
+            <p class="lead" id="mensaje"></p>
+            <p class="lead" id="sol1"></p>
+            <p class="lead" id="sol2"></p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="js/calcular.js"></script>
+      
+    </body>
+
+</html>
